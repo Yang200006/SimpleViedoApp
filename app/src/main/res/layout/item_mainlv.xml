@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <cn.jzvd.JzvdStd
+        android:id="@+id/item_main"
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_main_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/ic_launcher"></ImageView>
+
+        <TextView
+            android:id="@+id/item_main_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_main_iv"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="Andy"></TextView>
+
+
+
+        <TextView
+            android:id="@+id/item_main_iv_heart"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            tools:text="133"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/heart"
+            android:drawablePadding="5dp"></TextView>
+
+        <TextView
+            android:id="@+id/item_main_iv_reply"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/item_main_iv_heart"
+            android:layout_marginRight="10dp"
+            tools:text="133"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/comment"
+            android:drawablePadding="5dp"></TextView>
+
+        <TextView
+            android:id="@+id/item_main_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_main_tv_name"
+            android:layout_alignLeft="@id/item_main_tv_name"
+            android:layout_toLeftOf="@id/item_main_iv_reply"
+            android:layout_marginRight="10dp"
+            android:textSize="10sp"
+            tools:text="不知名不知名"></TextView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
